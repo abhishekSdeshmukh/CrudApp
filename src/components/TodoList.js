@@ -2,16 +2,16 @@ import React from 'react';
 
 const TodoList = ({todos, setTodos, setEditTodo}) => {
 
-    const handleComplete = ({todo}) =>{
-        setTodos(
-            todos.map((item) => {
-                if (item.id === todo.id) {
-                    return { ...item, completed: !item.completed};
-                }
-                return item;
-            })
-        );
-    };
+    // const handleComplete = ({todo}) =>{
+    //     setTodos(
+    //         todos.map((item) => {
+    //             if (item.id === todo.id) {
+    //                 return { ...item, completed: !item.completed};
+    //             }
+    //             return item;
+    //         })
+    //     );
+    // };
 
     const handleEdit = ({id}) => {
         const findTodo = todos.find((todo) => todo.id === id);
